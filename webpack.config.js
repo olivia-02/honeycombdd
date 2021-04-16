@@ -1,4 +1,5 @@
 const HtmlWebPackPlugin = require('html-webpack-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -25,7 +26,8 @@ module.exports = {
 		new HtmlWebPackPlugin({
 			template: './src/index.html',
 			filename: './index.html'
-		})
+		}),
+		new FaviconsWebpackPlugin('./src/img/favicon.svg')
 	], 
 	resolve: {
 		alias: {
