@@ -29,9 +29,10 @@ return(
 <header>
     <div>
         <li className="logo"><a href="../"><img src="./src/img/favicon.svg" /></a></li>
+        <FontAwesome id="ham" onClick={openHam} size="2x" name="bars" />
     </div>
     <div id="headerp2">
-        <a id="ham" onClick={openHam}><FontAwesome size="2x" name="bars" /></a>
+        
         <div id="hamLinks">
             <li><a href="/about">About</a></li>
             <li><div id="servDropdown"><button onClick={openServ}>Services</button>
