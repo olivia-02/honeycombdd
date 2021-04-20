@@ -5,7 +5,7 @@ import FontAwesome from 'react-fontawesome'
 const Footer = () => {
     return(
         <footer className="grid">
-            <div>Honeycomb Design & Development is owned and operated by your friendly neighbourhood <b>Olivia</b>, feel free to reach out at <a href="mailto:olivia@honeycombdd.com">olivia@honeycombdd.com</a></div>
+            <div>Honeycomb Design & Development is owned and operated by your friendly neighbourhood <b>Olivia</b>, feel free to reach out any time by <a href="mailto:olivia@honeycombdd.com">email.</a></div>
             <div>
                 <ul>
                     <li>Home</li>

@@ -28,7 +28,7 @@ return(
 
 <header>
     <div>
-        <li className="logo"><a href="../"><img src="./src/img/favicon.svg" /></a></li>
+        <li className="logo"><a href="../"><img src="../src/img/favicon.svg" /></a></li>
         <FontAwesome id="ham" onClick={openHam} size="2x" name="bars" />
     </div>
     <div id="headerp2">
