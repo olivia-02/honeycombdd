@@ -1,6 +1,7 @@
 import React from 'react'
 import 'css/index.css'
 import FontAwesome from 'react-fontawesome'
+import hcddLogo from '../img/favicon.svg'
 
 const Header = () => {
 
@@ -28,7 +29,7 @@ return(
 
 <header>
     <div>
-        <li className="logo"><a href="../"><img src="../src/img/favicon.svg" /></a></li>
+        <li className="logo"><a href="../"><img src={hcddLogo} /></a></li>
         <FontAwesome id="ham" onClick={openHam} size="2x" name="bars" />
     </div>
     <div id="headerp2">

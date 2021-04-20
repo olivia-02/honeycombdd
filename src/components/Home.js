@@ -2,7 +2,11 @@ import React from 'react'
 import '../css/index.css'
 import Header from './Header'
 import Footer from './Footer'
-import imgcomp from '../src/img/graphics-01comp.svg'
+import imgcomp from '../img/graphics-01comp.svg'
+import imggraph from '../img/graphics-02webgraph.svg'
+import imglogos from '../img/graphics-03logo.svg'
+import imgprint from '../img/graphics-04print.svg'
+import imgmgmt from '../img/graphics-05mgmt.svg'
 
 const Home = () => {
     return (
@@ -32,22 +36,22 @@ const Home = () => {
                 <p>Adding a personal touch to the process, we can discuss your personal needs and work together to make a unique statement for your business.</p>
             </div>
             <div className="gridBox">
-                <img src="~/src/img/graphics-01comp.svg"></img>
+                <img src={imggraph}></img>
                 <h3>Web & Social Graphics</h3>
                 <p>Just like all the ones on this site, yours needs illustrations in high quality resizable SVG formats to communicate with the user.</p>
             </div>
             <div className="gridBox">
-                <img src="../src/img/graphics-03logo.svg"></img>
+                <img src={imglogos}></img>
                 <h3>Professional Logo Design</h3>
                 <p>Help consumers and clients identify your company with a custom logo expressing your brand mission and services.</p>
             </div>
             <div className="gridBox">
-                <img src="../src/img/graphics-04print.svg"></img>
+                <img src={imgprint}></img>
                 <h3>Versatile Print Graphics</h3>
                 <p>Your business cards, letterheads, and flyers alike often act as the first impression- make the design stand out from the crowd.</p>
             </div>
             <div className="gridBox">
-                <img src="../src/img/graphics-05mgmt.svg"></img>
+                <img src={imgmgmt}></img>
                 <h3>Ongoing Website Managemnt</h3>
                 <p>After the creation of your website, you'll need continued support to keep it up to date and current. <i>Honeycomb</i> gladly will help you with this.</p>
             </div>
