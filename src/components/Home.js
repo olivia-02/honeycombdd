@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/index.css'
 import Header from './Header'
 import Footer from './Footer'
+import imgcomp from '../src/img/graphics-01comp.svg'
 
 const Home = () => {
     return (
@@ -26,7 +27,7 @@ const Home = () => {
         </section>
         <section className="serviceGrid grid">
             <div id="customWebsites" className="gridBox">
-                <img src="../src/img/graphics-01comp.svg"></img>
+                <img src={imgcomp}></img>
                 <h3>Custom Website Creation</h3>
                 <p>Adding a personal touch to the process, we can discuss your personal needs and work together to make a unique statement for your business.</p>
             </div>
