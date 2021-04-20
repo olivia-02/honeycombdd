@@ -53,7 +53,7 @@ Header #ham {
   left: auto; top: 4.5vh; right: 14px;
 
   }
-Header a {
+header a {
     color: white;
     padding: 14px 16px;
     text-decoration: none;
@@ -61,11 +61,11 @@ Header a {
     display: block;
   }
 
-  Header #hamLinks {
+  header #hamLinks {
       display: none;
   }
 
-Header img {
+header img {
     height: 10vh;
 }
 #servDropContent {
