@@ -31,7 +31,7 @@ const Home = () => {
                 <p>Adding a personal touch to the process, we can discuss your personal needs and work together to make a unique statement for your business.</p>
             </div>
             <div className="gridBox">
-                <img src="../src/img/graphics-02webgraph.svg"></img>
+                <img src="~/src/img/graphics-01comp.svg"></img>
                 <h3>Web & Social Graphics</h3>
                 <p>Just like all the ones on this site, yours needs illustrations in high quality resizable SVG formats to communicate with the user.</p>
             </div>
