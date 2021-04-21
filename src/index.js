@@ -2,5 +2,51 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'css/index.css'
 import Home from './components/Home'
+import Header from './components/Header'
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+  } from "react-router-dom";
 
-ReactDOM.render(<Home />, document.getElementById('root'))
+
+
+
+function AtHome() {
+    return <h2>Home</h2>;
+  }
+  
+  function About() {
+    return <h2>About</h2>;
+  }
+  
+  function Users() {
+    return <h2>Users</h2>;
+  }
+  const App = () => {
+    
+    return(
+    <div>
+        <Router>
+        <Header></Header>
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/services/web">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+        </Router>
+
+    </div>
+    )
+  }
+
+
+
+  ReactDOM.render(<App />, root)

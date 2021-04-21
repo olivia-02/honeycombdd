@@ -24,7 +24,8 @@ body {
   font-family: var(--Gill);
   height: 100vh;
   perspective: 2px;
-  overflow: auto;
+  overflow-x: hidden;
+  width: 100vw;
 }
 .pbr {
   margin: 0 0 1vh;
@@ -34,11 +35,12 @@ body {
 }
 /* PHONE VIEWPORT */
 /*HEADER STYLES*/
-header {
+Header {
   position: sticky;
   top: 0px;
   background-color: var(--primary-col);
   perspective: 2px;
+  z-index: 2px;
   margin: auto 0px;;
 }
 Header :first-child {

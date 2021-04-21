@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/index.css'
-import Header from './Header'
 import Footer from './Footer'
 import imgcomp from '../img/graphics-01comp.svg'
 import imggraph from '../img/graphics-02webgraph.svg'
@@ -11,7 +10,6 @@ import imgmgmt from '../img/graphics-05mgmt.svg'
 const Home = () => {
     return (
     <div id="home"> 
-        <Header></Header>
         <section id="hero">
             <div><h1>naturally perfect.</h1>
             <h2>Honeycomb <br /> Design & Development</h2>

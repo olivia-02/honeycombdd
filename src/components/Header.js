@@ -1,4 +1,10 @@
 import React from 'react'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import 'css/index.css'
 import FontAwesome from 'react-fontawesome'
 import hcddLogo from '../img/favicon.svg'
@@ -35,22 +41,27 @@ return(
     <div id="headerp2">
         
         <div id="hamLinks">
-            <li><a href="/about">About</a></li>
-            <li><div id="servDropdown"><button onClick={openServ}>Services</button>
+            <li><Link to="/about">About</Link></li>
+            <li>
+              <div id="servDropdown"><button onClick={openServ}>Services</button>
                 <div id="servDropContent">
-                    <a href="/services/web">Custom Websites</a>
+                    <Link to="/services/web">Custom Websites</Link>
                     <a href="/services/graphic">Graphic Design</a>
                     <a href="/services/web">Mixed</a>
-                    </div>
                 </div>
+              </div>
             </li>
             <li><a href="/contact">Contact</a></li>
         </div>
-    </div>
+        
+        </div>
+        
 </header>
 
 )
 
 }
+
+
 
 export default Header
