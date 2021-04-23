@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'css/index.css'
 import Home from './components/Home'
+import About from './components/About'
 import Header from './components/Header'
 import {
     BrowserRouter as Router,
@@ -10,16 +11,8 @@ import {
     Link
   } from "react-router-dom";
 
+const root = document.getElementById('root')
 
-
-
-function AtHome() {
-    return <h2>Home</h2>;
-  }
-  
-  function About() {
-    return <h2>About</h2>;
-  }
   
   function Users() {
     return <h2>Users</h2>;

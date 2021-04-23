@@ -40,7 +40,7 @@ Header {
   top: 0px;
   background-color: var(--primary-col);
   perspective: 2px;
-  z-index: 2px;
+  z-index: 1px;
   margin: auto 0px;;
 }
 Header :first-child {
@@ -177,6 +177,40 @@ footer ul{
   list-style-type: none;
 }
 
+/* END FOOTER STYLES */
+#about {
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+  top: 0%;
+  font-family: var(--Monserrat);
+  color: var(--primary-col);
+  /* overflow-x: hidden; */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.me {
+  grid-template-columns: 1fr;
+  width: 100vw;
+  text-align: center;
+  background-color: var(--secondary-vari);
+}
+.me h1 {
+  color: var(--primary-col);
+  font-family: var(--Gill);
+  font-style: italic;
+  font-size: 10vw;
+  margin-bottom: 0;
+}
+.me img {
+  width: 70vw;
+  margin: 2vh auto;
+}
+.me p {
+  text-align: left;
+  margin: 2vh;
+}
 
   @media (min-width: 640px){
  
