@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import 'css/index.css'
 import Home from './components/Home'
 import About from './components/About'
+import Error404 from './components/Error404'
 import Header from './components/Header'
 import {
     BrowserRouter as Router,
@@ -21,6 +22,7 @@ const root = document.getElementById('root')
     
     return(
     <div>
+      
         <Router>
         <Header></Header>
         <Switch>
@@ -30,9 +32,10 @@ const root = document.getElementById('root')
           <Route path="/services/web">
             <Users />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
+          <Route path="*" component={Error404} />
         </Switch>
         </Router>
 

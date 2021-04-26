@@ -43,7 +43,7 @@ Header {
   z-index: 1px;
   margin: auto 0px;;
 }
-Header :first-child {
+Header .logo {
   display: inline-block;
   vertical-align: middle;
 }
@@ -60,11 +60,14 @@ header a {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: var(--Gill);
     display: block;
+    
   }
 
   header #hamLinks {
       display: none;
+      text-align: center;
   }
 
 header img {
@@ -72,7 +75,9 @@ header img {
 }
 #servDropContent {
     display: none;
-    padding-left: 5vw;
+}
+#servDropContent a {
+  color: #FFCA73;
 }
 #servDropdown button {
     background-color: #00000000;
@@ -159,7 +164,7 @@ header img {
 /* END SERVICES GRID */
 
 footer {
-  padding: 2em 1em;
+  padding: 1em 1em;
   font-family: var(--Monserrat);
   font-weight: 400;
   color: var(--primary-col);
@@ -210,6 +215,36 @@ footer ul{
 .me p {
   text-align: left;
   margin: 2vh;
+}
+/* END ABOUT */
+
+#error404 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/wallpaper.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  position: absolute;
+  top: 0%;
+  width: 100vw;
+  z-index: -1;
+  box-sizing: border-box;
+}
+#error404 Footer {
+  position: absolute;
+  bottom: 0%;
+}
+#errTab {
+  background-color: var(--accent-col);
+  position: absolute;
+  width: 80vw;
+  top: 30%;
+  left: 8%;
+  padding: 2vw;
+}
+#errTab h2, h3 {
+  color: var(--primary-col);
+  margin: 0;
 }
 
   @media (min-width: 640px){

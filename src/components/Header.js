@@ -41,17 +41,16 @@ return(
     <div id="headerp2">
         
         <div id="hamLinks">
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/about" onClick={openHam}>About</Link></li>
             <li>
               <div id="servDropdown"><button onClick={openServ}>Services</button>
                 <div id="servDropContent">
-                    <Link to="/services/web">Custom Websites</Link>
-                    <a href="/services/graphic">Graphic Design</a>
-                    <a href="/services/web">Mixed</a>
+                    <Link to="/services/web" onClick={openHam}>Custom Websites</Link>
+                    <Link to="/services/graphic" onClick={openHam}>Graphic Design</Link>
                 </div>
               </div>
             </li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/contact" onClick={openHam}>Contact</Link></li>
         </div>
         
         </div>

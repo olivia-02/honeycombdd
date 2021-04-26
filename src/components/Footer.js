@@ -1,6 +1,12 @@
 import React from 'react'
 import 'css/index.css'
 import FontAwesome from 'react-fontawesome'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -8,17 +14,15 @@ const Footer = () => {
             <div>Honeycomb Design & Development is owned and operated by your friendly neighbourhood <b>Olivia</b>, feel free to reach out any time by <a href="mailto:olivia@honeycombdd.com">email.</a></div>
             <div>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li>Services</li>
-                    <li>Websites</li>
-                    <li>Graphics</li>
-                    <li>& More</li>
+                    <li><Link to="/services/web">Websites</Link></li>
+                    <li><Link to="services/graphic">Graphics</Link></li>
                 </ul>
             </div>
         </footer>
