@@ -45,8 +45,8 @@ return(
             <li>
               <div id="servDropdown"><button onClick={openServ}>Services</button>
                 <div id="servDropContent">
-                    <Link to="/services/web" onClick={openHam}>Custom Websites</Link>
-                    <Link to="/services/graphic" onClick={openHam}>Graphic Design</Link>
+                    <Link to="/web" onClick={openHam}>Custom Websites</Link>
+                    <Link to="/graphic" onClick={openHam}>Graphic Design</Link>
                 </div>
               </div>
             </li>

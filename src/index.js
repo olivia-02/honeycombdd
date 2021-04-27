@@ -4,6 +4,7 @@ import 'css/index.css'
 import Home from './components/Home'
 import About from './components/About'
 import Error404 from './components/Error404'
+import WebService from './components/WebServ'
 import Header from './components/Header'
 import {
     BrowserRouter as Router,
@@ -11,13 +12,10 @@ import {
     Route,
     Link
   } from "react-router-dom";
+import WebServ from './components/WebServ'
 
 const root = document.getElementById('root')
 
-  
-  function Users() {
-    return <h2>Users</h2>;
-  }
   const App = () => {
     
     return(
@@ -29,8 +27,8 @@ const root = document.getElementById('root')
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/services/web">
-            <Users />
+          <Route path="/web">
+            <WebService />
           </Route>
           <Route exact path="/">
             <Home />

@@ -21,8 +21,8 @@ const Footer = () => {
             </div>
             <div>
                 <ul>
-                    <li><Link to="/services/web">Websites</Link></li>
-                    <li><Link to="services/graphic">Graphics</Link></li>
+                    <li><Link to="/web">Websites</Link></li>
+                    <li><Link to="/graphic">Graphics</Link></li>
                 </ul>
             </div>
         </footer>

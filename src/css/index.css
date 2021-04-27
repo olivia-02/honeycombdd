@@ -22,7 +22,6 @@ body {
   margin: 0px;
   padding: 0;
   font-family: var(--Gill);
-  height: 100vh;
   perspective: 2px;
   overflow-x: hidden;
   width: 100vw;
@@ -40,7 +39,7 @@ Header {
   top: 0px;
   background-color: var(--primary-col);
   perspective: 2px;
-  z-index: 1px;
+  z-index: 1;
   margin: auto 0px;;
 }
 Header .logo {
@@ -90,34 +89,30 @@ header img {
 
 #hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/wallpaper.svg');
-  background-size: 250% 250%;
+  background-size: 250vw 250vh;
   background-position:center;
   background-repeat: no-repeat;
   height: 40vh;
   width: 100%;
-  position: relative;
-  z-index: -2;
-  transform: translateZ(-0.5px) scale(1.5);
   margin: 0;
   padding: 0;
   text-align: center;
 }
 #hero div {
   display: inline-block;
-  padding-top: 7vh;
+  padding-top: 3vh;
 }
 #hero h1 {
   color: var(--text-icon-col);
   font-family: var(--Monserrat);
   font-weight: 300;
-  font-size: 8vw;
+  font-size: 6vh;
   margin: 0;
 }
 #hero h2 {
-  font-size: 6vw;
+  font-size: 4vh;
   color: var(--secondary-vari);
 }
-
 /* END HERO */
 
 .summaryBox {
@@ -151,6 +146,7 @@ header img {
   margin: 3vw;
   box-shadow: 1vw 1vh 1em black;
   color: var(--primary-col);
+  z-index: -1;
 }
 .serviceGrid div {
   color: var(--primary-col);
@@ -247,6 +243,53 @@ footer ul{
   margin: 0;
 }
 
+/* END ERROR PAGE */
+
+#webHero {
+  height: 40vh;
+  background-image: url(/src/img/deskhero-pexels-pixabay.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  text-align: center;
+}
+#webHero h1 {
+  font-family: var(--Gill);
+  margin: 0 auto;
+  padding-top: 15vh;
+  color: var(--primary-col);
+  font-size: 2em;
+}
+#WebServices .summaryBox {
+  color: #2c3141;
+  font-family: var(--Gill);
+  padding: 5vw;
+}
+.summaryBox ul {
+  font-family: var(--Monserrat);
+  padding: 0px 30px;
+}
+.summaryBox li {
+  padding-top: 1vh;
+}
+.summaryBox h2 {
+  margin-top: 0;
+}
+.processBox {
+  font-family: var(--Gill);
+  padding: 5vw;
+}
+.processBox ol {
+  font-family: var(--Monserrat);
+  padding: 0px 30px;
+}
+.processBox h3 {
+  color: var(--secondary-col);
+}
+#wireProtoImg {
+  width: 100%;
+  margin-bottom: 1em;
+}
   @media (min-width: 640px){
  
 
