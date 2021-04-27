@@ -6,13 +6,13 @@ import About from './components/About'
 import Error404 from './components/Error404'
 import WebService from './components/WebServ'
 import Header from './components/Header'
+import Contact from './components/Contact'
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
   } from "react-router-dom";
-import WebServ from './components/WebServ'
 
 const root = document.getElementById('root')
 
@@ -29,6 +29,9 @@ const root = document.getElementById('root')
           </Route>
           <Route path="/web">
             <WebService />
+          </Route>
+          <Route path="/contact">
+            <Contact />
           </Route>
           <Route exact path="/">
             <Home />

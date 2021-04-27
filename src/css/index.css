@@ -290,6 +290,31 @@ footer ul{
   width: 100%;
   margin-bottom: 1em;
 }
+
+/* END WEBSERV PAGE  */
+#contactForm{
+  width: 90vw;
+  padding: 3vh 5vw;
+  background-color: var(--primary-vari);
+}
+#contactForm h1, #contactForm h2, #contactForm h3{
+  color: var(--primary-col);
+  margin: 0px;
+  font-family: var(--Monserrat);
+}
+#contactForm input {
+  margin-bottom: 1em;
+}
+#contactForm label {
+  display: block;
+}
+#contactForm p {
+  font-family: var(--Gill);
+}
+textarea {
+  width: 100%;
+  resize: none;
+}
   @media (min-width: 640px){
  
 
