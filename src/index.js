@@ -7,6 +7,7 @@ import Error404 from './components/Error404'
 import WebService from './components/WebServ'
 import Header from './components/Header'
 import Contact from './components/Contact'
+import Graphics from './components/GraphicDes'
 import {
     BrowserRouter as Router,
     Switch,
@@ -29,6 +30,9 @@ const root = document.getElementById('root')
           </Route>
           <Route path="/web">
             <WebService />
+          </Route>
+          <Route path="/graphic">
+            <Graphics />
           </Route>
           <Route path="/contact">
             <Contact />

@@ -6,6 +6,7 @@ import imggraph from '../img/graphics-02webgraph.svg'
 import imglogos from '../img/graphics-03logo.svg'
 import imgprint from '../img/graphics-04print.svg'
 import imgmgmt from '../img/graphics-05mgmt.svg'
+import {Link} from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -54,6 +55,10 @@ const Home = () => {
                 <p>After the creation of your website, you'll need continued support to keep it up to date and current. <i>Honeycomb</i> gladly will help you with this.</p>
             </div>
         </section>
+        <div id="callToAct">
+                <h2>Ready to get going?</h2>
+                <Link to="/contact"><button>Contact Honeycomb!</button></Link>
+            </div>
         <Footer></Footer>
     </div> 
     )

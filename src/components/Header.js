@@ -11,23 +11,32 @@ import hcddLogo from '../img/favicon.svg'
 
 const Header = () => {
 
+  // : 28
     
     function openHam() {
         const x = document.getElementById("hamLinks");
-        if (x.style.display === "block") {
+        const y = document.getElementById("ham")
+        console.log(y.clientWidth)
+        if (y.clientWidth === 28) {
+          if (x.style.display === "block") {
           x.style.display = "none";
 
-        } else {
+          } else {
           x.style.display = "block";
         }
-      }
+      }}
+        
     function openServ() {
         const x = document.getElementById("servDropContent");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+        const y = document.getElementById("ham")
+        console.log(y.clientWidth)
+        if (y.clientWidth === 28) {
+          if (x.style.display === "block") {
+            x.style.display = "none";
 
-        } else {
-          x.style.display = "block";
+          } else {
+            x.style.display = "block";
+          }
         }
     }
 
@@ -36,8 +45,9 @@ return(
 <header>
     <div>
         <li className="logo"><a href="../"><img src={hcddLogo} /></a></li>
-        <FontAwesome id="ham" onClick={openHam} size="2x" name="bars" />
+        <span id="ham"><FontAwesome onClick={openHam} size="2x" name="bars" /></span>
     </div>
+    <div></div>
     <div id="headerp2">
         
         <div id="hamLinks">
